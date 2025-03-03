@@ -1,0 +1,72 @@
+@mixin on-tablet {
+  @media (min-width: #{$on-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: #{$on-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin page-grid {
+  max-width: 1280px;
+
+  @include on-tablet {
+    display: grid;
+    grid-template-columns: repeat($grid-columns-tablet, 1fr);
+    column-gap: 20px;
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat($grid-columns-desktop, 1fr);
+    column-gap: 30px;
+  }
+}
+
+@mixin hover-and-active-for-buttons {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #131313;
+    box-shadow: 0 4px 15px rgba(150, 150, 150, 0.5);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3b3b3b;
+  }
+}
+
+@mixin hover-and-active-for-text(
+  $line-color: #000,
+  $line-height: 2px,
+  $duration: 0.3s
+) {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: #333;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: $line-height;
+    background-color: $line-color;
+    transition: width $duration ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:active {
+    color: gray;
+  }
+}
