@@ -33,23 +33,23 @@ Before running the project, ensure you have the following installed:
 - **Node.js (v16 or later)** – [Download Node.js](https://nodejs.org/)
 
 To check if Node.js and npm are installed, run:
-node -v  # Should return a version number (v16 or later recommended)
-npm -v   # Should return a version number
+- **node -v**  # Should return a version number (v16 or later recommended)
+- **npm -v**   # Should return a version number
 
 
 ### 2️⃣ **Clone the Repository**
 Run the following command in your terminal:
-git clone https://github.com/your-username/crazybaby-landing-page.git
+- **git clone https://github.com/your-username/crazybaby-landing-page.git**
 
 Navigate into the project folder:
-cd crazybaby-landing-page
+- **cd crazybaby-landing-page**
 
 ### 3️⃣ **Install Dependencies**
 Run the following command to install required packages:
-npm install
+- **npm install**
 
 ### 4️⃣ **Run the Project**
 Start a local development server:
-npm run dev
+- **npm run dev**
 
 #The site should now be accessible at http://localhost:3000/ (or another port specified in the console).
