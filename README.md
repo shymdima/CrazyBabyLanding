@@ -1,6 +1,6 @@
 # CrazyBaby - Modern Acoustic Landing Page
 
-## 🔗 Live Preview: [View Site](#)
+## 🔗 Live Preview: [View Site](https://shymdima.github.io/CrazyBabyLanding/)
 
 ## 🚀 Project Overview
 CrazyBaby is a modern landing page designed to promote high-quality acoustic equipment. The website combines a sleek, contemporary design with advanced functionality to highlight the superior sound quality of its products.
